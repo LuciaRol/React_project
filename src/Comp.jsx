@@ -3,8 +3,13 @@ function Comp(){
         console.log("Has clicado en el boton")
     }
 
+    function listaClick(e){
+        // como en js plano, esta es la forma de que solo salga en pantalla en item clicado
+        console.log("Has clicado en " + e.target.innerHTML)
+    }
+
     let titulo = "Cargando contenido de titulo";
-    let nombres=['lu', 'paco', 'sam', 'pablo'];
+    let nombres=['lu', 'nerdo', 'sam', 'pablo'];
     let lista = nombres.map(nombre =>
             <li key={nombre}>{nombre}</li>
         )
@@ -16,7 +21,7 @@ function Comp(){
         <h2>{titulo}</h2>
 
         <button onClick={trataClick}>Hazme click</button>
-        <ul>
+        <ul onClick={listaClick}>
             {lista}
         </ul>
      
