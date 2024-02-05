@@ -5,16 +5,17 @@ import './App.css'
 import Comp from './Comp.jsx'
 
 function App() {
+  // mostrar a través de count, modificar a través de setCount
   const [count, setCount] = useState(0)
 
   return (
     <>
     <Comp></Comp>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
+        <a href="https://vitejs.dev" target="">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
-        <a href="https://react.dev" target="_blank">
+        <a href="https://react.dev" target="">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
