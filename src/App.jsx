@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-    <Comp></Comp>
+    <Comp param="Pablito"></Comp>
       <div>
         <a href="https://vitejs.dev" target="">
           <img src={viteLogo} className="logo" alt="Vite logo" />

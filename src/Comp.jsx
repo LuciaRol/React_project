@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function Comp(){
+function Comp({ param, param2=0 }){
 
     const [titulo, setTitulo] = useState('Cargando contenido de titulo');
 
@@ -22,7 +22,8 @@ function Comp(){
     return(
     <>
         <h1>Primer componente</h1>
-        <h2>{titulo}</h2>
+        <h2>Recibe como param = {param}</h2>
+        <h2>Recibe como param2 = {param2}</h2>
 
         <button onClick={trataClick}>Hazme click</button>
         <ul onClick={trataClick}>
