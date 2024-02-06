@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Comp from './Comp.jsx'
+import Pokemon from './pokemon.jsx'
 
 function App() {
   // mostrar a través de count, modificar a través de setCount
@@ -11,6 +12,10 @@ function App() {
   return (
     <>
     <Comp param="Pablito"></Comp>
+    <Pokemon></Pokemon>
+
+    <button>Hazme click</button>
+
       <div>
         <a href="https://vitejs.dev" target="">
           <img src={viteLogo} className="logo" alt="Vite logo" />
