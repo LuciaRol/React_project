@@ -1,0 +1,10 @@
+-- Crear proyecto React:
+npm init react-app my-app 
+(Hay más comandos pero este proyecto fue con npm)
+
+-- Crear componentes:
+Se hacen a mano dentro dentro del proyecto.
+Los ficheros tienen que tener extensión .jsx
+
+-- Para lanzar el servidor:
+npm run dev
